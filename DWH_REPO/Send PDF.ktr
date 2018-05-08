@@ -1,0 +1,1486 @@
+<transformation>
+  <info>
+    <name>Send PDF</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2018&#x2f;04&#x2f;19 15&#x3a;03&#x3a;12.651</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#x2f;05&#x2f;02 12&#x3a;05&#x3a;14.876</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>DWH</name>
+    <server>axc-dwh</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>DWH</database>
+    <port>1521</port>
+    <username>axcess</username>
+    <password>Encrypted 2be98afc82ff3caa0b24b8448f386a58e</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Get Mail Var</from><to>Merge Join</to><enabled>Y</enabled> </hop>
+  <hop> <from>Get Data</from><to>Merge Join</to><enabled>Y</enabled> </hop>
+  <hop> <from>Get Login</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join</from><to>Sort rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows</from><to>Merge Join 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value</from><to>Replace in string</to><enabled>Y</enabled> </hop>
+  <hop> <from>Get File Names</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Dummy &#x28;do nothing&#x29;</to><enabled>Y</enabled> </hop>
+  <hop> <from>Replace in string</from><to>Sort rows 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows 3</from><to>Merge Join 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Strings cut</to><enabled>Y</enabled> </hop>
+  <hop> <from>Sort rows 2</from><to>Merge Join 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Strings cut</from><to>Sort rows 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join 3</from><to>Filter rows 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 2</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Not Send</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 2</from><to>Dummy &#x28;do nothing&#x29; 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Dummy &#x28;do nothing&#x29; 2</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>OK</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join 2</from><to>Merge Join 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Merge Join 4</from><to>Modified Java Script Value</to><enabled>Y</enabled> </hop>
+  <hop> <from>mail body</from><to>Merge Join 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Dummy &#x28;do nothing&#x29; 2</from><to>Filter rows 2 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 2 2</from><to>Copy rows to result</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>Copy rows to result</name>
+    <type>RowsToResult</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1424</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29;</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>896</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29; 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1120</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Strings cut</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29;</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>extension</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>pdf</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>896</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Dummy &#x28;do nothing&#x29; 2</send_true_to>
+<send_false_to>Select values</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>short_filename_cut</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1008</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 2 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Copy rows to result</send_true_to>
+<send_false_to/>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>extension</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>pdf</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1264</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get Data</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DWH</connection>
+    <sql>select &#x2a; from T_DANE_MOBILNI&#x40;BI_LOAN_MIDAS&#xd;&#xa;where booking_date &#x3d; &#x28;select max&#x28;booking_date&#x29; from T_DANE_MOBILNI&#x40;BI_LOAN_MIDAS&#x29;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>32</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get File Names</name>
+    <type>GetFileNames</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filter>
+      <filterfiletype>all_files</filterfiletype>
+    </filter>
+    <doNotFailIfNoFile>N</doNotFailIfNoFile>
+    <rownum>N</rownum>
+    <isaddresult>Y</isaddresult>
+    <filefield>N</filefield>
+    <rownum_field/>
+    <filename_Field/>
+    <wildcard_Field/>
+    <exclude_wildcard_Field/>
+    <dynamic_include_subfolders>N</dynamic_include_subfolders>
+    <limit>0</limit>
+    <file>
+      <name>&#x24;&#x7b;ODS_WORK_DIR&#x7d;prowizje_pliki&#x2f;&#x24;&#x7b;v_month&#x7d;&#x2f;</name>
+      <filemask>.&#x2a;&#x5c;.pdf</filemask>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>784</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get Login</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DWH</connection>
+    <sql>select      count&#x28;&#x2a;&#x29; ile,&#xd;&#xa;			to_char&#x28;round&#x28;sum&#x28;nvl&#x28;prowizja,0&#x29;&#x29;,2&#x29;&#x29; as prowizja,&#xd;&#xa;            trim&#x28;jednostka_kod&#x29; as konto_f,&#xd;&#xa;            trim&#x28;jed_nazwisko_imie&#x29; as nazwisko_imie_f&#xd;&#xa;from konmar.prowizje_mob&#x40;bi_loan_midas&#xd;&#xa; where prowizje_z_miesiaca &#x3d;  to_char&#x28;add_months&#x28;sysdate,-2&#x29;,&#x27;yyyy-mm&#x27;&#x29;&#xd;&#xa;    and &#x28;nvl&#x28;notes, &#x27;aa&#x27;&#x29; not like &#x28;&#x27;prowizja za 2 zrobione rollovery&#x27;&#x29; &#xd;&#xa;    and nvl&#x28;notes, &#x27;aa&#x27;&#x29; not like &#x28;&#x27;prowizja za 2 zap&#x25;&#x27;&#x29;&#x29; &#xd;&#xa;and konto is not null&#xd;&#xa;group by jednostka_kod, jed_nazwisko_imie&#xd;&#xa;order by 3</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>352</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get Mail Var</name>
+    <type>GetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>ODS_ADRESSES_LIST</name>
+        <variable>&#x24;&#x7b;ODS_ADRESSES_LIST&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_CYCLE_TIME</name>
+        <variable>&#x24;&#x7b;ODS_CYCLE_TIME&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_DBNAME_DB</name>
+        <variable>&#x24;&#x7b;ODS_DBNAME_DB&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_ERR_FOLDER</name>
+        <variable>&#x24;&#x7b;ODS_ERR_FOLDER&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_HOST_DB</name>
+        <variable>&#x24;&#x7b;ODS_HOST_DB&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_HTML_DIR</name>
+        <variable>&#x24;&#x7b;ODS_HTML_DIR&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_PASS_DB</name>
+        <variable>&#x24;&#x7b;ODS_PASS_DB&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_PASS_OPER</name>
+        <variable>&#x24;&#x7b;ODS_PASS_OPER&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_SENDER_MAIL</name>
+        <variable>&#x24;&#x7b;ODS_SENDER_MAIL&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_SMTP_NAME</name>
+        <variable>&#x24;&#x7b;ODS_SMTP_NAME&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_SMTP_PASS</name>
+        <variable>&#x24;&#x7b;ODS_SMTP_PASS&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_SMTP_PORT</name>
+        <variable>&#x24;&#x7b;ODS_SMTP_PORT&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_SMTP_SERVER</name>
+        <variable>&#x24;&#x7b;ODS_SMTP_SERVER&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_SMTP_USER</name>
+        <variable>&#x24;&#x7b;ODS_SMTP_USER&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_USER_DB</name>
+        <variable>&#x24;&#x7b;ODS_USER_DB&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_USER_OPER</name>
+        <variable>&#x24;&#x7b;ODS_USER_OPER&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>ODS_WORK_DIR</name>
+        <variable>&#x24;&#x7b;ODS_WORK_DIR&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>V_MONTH</name>
+        <variable>&#x24;&#x7b;v_month&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>144</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Merge Join</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>FULL OUTER</join_type>
+<step1>Get Mail Var</step1>
+<step2>Get Data</step2>
+    <keys_1>
+    </keys_1>
+    <keys_2>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>144</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Merge Join 2</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>INNER</join_type>
+<step1>Sort rows</step1>
+<step2>Get Login</step2>
+    <keys_1>
+      <key>KONTO</key>
+    </keys_1>
+    <keys_2>
+      <key>KONTO_F</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>352</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Merge Join 3</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>LEFT OUTER</join_type>
+<step1>Sort rows 3</step1>
+<step2>Sort rows 2</step2>
+    <keys_1>
+      <key>KONTO_F</key>
+    </keys_1>
+    <keys_2>
+      <key>short_filename_cut</key>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>896</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Merge Join 4</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<join_type>FULL OUTER</join_type>
+<step1>Merge Join 2</step1>
+<step2>mail body</step2>
+    <keys_1>
+    </keys_1>
+    <keys_2>
+    </keys_2>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>432</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script here&#xd;&#xa;var mailto&#xd;&#xa;var mailcc&#xd;&#xa;var mailtest&#xd;&#xa;var sender&#xd;&#xa;var smtp&#xd;&#xa;var port&#xd;&#xa;var mail_sender&#xd;&#xa;var filename&#xd;&#xa;var subject&#xd;&#xa;var comment_1&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;&#x2f;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;sprawdzenie adresu&#xd;&#xa;&#xd;&#xa;if &#x28;EMAIL &#x3d;&#x3d; null &#x29;  &#x7b;&#xd;&#xa;      mailto &#x3d; DW1&#xd;&#xa;&#x7d; else &#x7b;&#xd;&#xa;      mailto &#x3d; EMAIL&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;sprawdzanie dw1&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if &#x28;DW1 &#x3d;&#x3d; null &#x29;  &#x7b;&#xd;&#xa;      mailcc &#x3d; &#x27;finance&#x40;axcesspoland.pl&#x27;&#xd;&#xa;&#x7d; else &#x7b;&#xd;&#xa;      mailcc &#x3d; DW1&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;if &#x28;STATUS &#x3d;&#x3d; &#x27;WYP&#x27;&#x29; &#x7b;&#xd;&#xa;      mailto &#x3d; DW1&#xd;&#xa;&#x7d; else &#x7b;&#xd;&#xa;      mailto &#x3d; EMAIL&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;dodanie dw2 jezeli nie puste&#xd;&#xa;if &#x28;DW2 &#x3d;&#x3d; null&#x29; &#x7b;&#xd;&#xa;     mailcc &#x3d; mailcc&#xd;&#xa;&#x7d; else &#x7b;&#xd;&#xa;     mailcc &#x3d; mailcc &#x2b; &#x27;, &#x27; &#x2b; DW2&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f; mail testowy&#xd;&#xa;mailtest &#x3d; &#x27;kgawryjolek&#x40;axcesspoland.pl&#x27;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f; plik&#xd;&#xa;filename &#x3d; &#x27;c&#x3a;&#x5c;&#x5c;work&#x5c;&#x5c;&#x27; &#x2b; &#x27;prowizje_pliki&#x5c;&#x5c;&#x27; &#x2b; V_MONTH &#x2b; &#x27;&#x5c;&#x5c;Prowizja_&#x27; &#x2b; KONTO_F &#x2b; &#x27;_&#x27; &#x2b; NAZWISKO_IMIE_F&#x2b; &#x27;_&#x27;&#x2b; V_MONTH &#x2b; &#x27;.pdf&#x27;&#x3b;&#xd;&#xa; &#x2f;&#x2f; mail&#xd;&#xa;subject &#x3d; &#x27;Axcess Financial Poland - prowizja za okres &#x27; &#x2b; V_MONTH &#x2b; &#x27; &#x27; &#x2b; NAZWISKO_IMIE_F&#x3b;&#xd;&#xa;&#x2f;&#x2f; comment&#xd;&#xa;sender &#x3d; &#x27;Reports Poland&#x27; &#x3b;&#xd;&#xa;comment_1 &#x3d; r1 &#x2b; V_MONTH &#x2b; &#x27;&#x3c;br&#x3e;&#x27;&#x2b; 	r2 &#x2b; r3 &#x2b; PROWIZJA &#x2b; &#x27; brutto. &#x3c;&#x2f;b&#x3e; &#x3c;br&#x3e;&#x27; &#x2b; r4 &#x2b; &#x27; &#x27;&#x2b; V_MONTH &#x2b; &#x27;&#x3c;&#x2f;b&#x3e;&#x3c;br&#x3e;&#x27;&#x3b;&#xd;&#xa;comment_1 &#x3d; comment_1 &#x2b; &#x27;&#x3c;p style&#x3d;&#x22;color&#x3a;rgb&#x28;255, 0, 0&#x29;&#x3b;&#x22;&#x3e;&#x27; &#x2b; &#x27;Dane do faktury&#x3a; &#x3c;br&#x3e; Axcess Financial Poland Sp. z o.o. &#x3c;br&#x3e; ul. Taneczna 18 02-829 Warszawa &#x3c;br&#x3e; NIP&#x3a; 527-264-29-79 &#x3c;&#x2f;p&#x3e;&#x3c;br&#x3e;&#x3c;br&#x3e;&#x27;&#x3b;&#xd;&#xa;comment_1 &#x3d; comment_1 &#x2b; &#x27;&#x3c;p style&#x3d;&#x22;color&#x3a;rgb&#x28;255, 0, 0&#x29;&#x3b;&#x22;&#x3e; &#x3c;b&#x3e; UWAGA ZMIANA&#x3a;&#x3c;&#x2f;b&#x3e; &#x3c;br&#x3e;&#x3c;&#x2f;p&#x3e;&#x27; &#x2b; r5&#x3b;&#xd;&#xa;comment_1 &#x3d; comment_1 &#x2b; &#x27;m&#x3a; &#x2b;48 351 75 50 wew. 7026 &#x3c;br&#x3e; e&#x3a; finance&#x40;axcesspoland.pl &#x3c;br&#x3e; w&#x3a; axcess-poland.pl&#x27; &#xd;&#xa;comment_1 &#x3d; comment_1 &#x2b; &#x27;&#x3c;br&#x3e;&#x3c;br&#x3e; Axcess Financial Poland Sp. z o.o., ul. Taneczna 18, 02-829 Warszawa, Poland Sad Rejonowy dla m.st.Warszawy, XIV Wydzial Gospodarczy Krajowego Rejestru Sadowego Kapital Zakladowy&#x3a; 3 006.000,0 PLN, KRS 0000371234, NIP&#x3a; 5272642979 &#x3c;br&#x3e;&#x3c;br&#x3e;&#x27;&#x3b;	&#xd;&#xa;comment_1 &#x3d; comment_1 &#x2b; &#x27;&#x3c;p style&#x3d;&#x22;color&#x3a;rgb&#x28;60, 179, 113&#x29;&#x3b;&#x22;&#x3e;&#x27; &#x2b; r6 &#x2b; &#x27;&#x3c;br&#x3e;&#x3c;br&#x3e;&#x27; &#x2b; &#x27;&#x3c;&#x2f;p&#x3e;&#x27;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>mailto</name>
+        <rename>mailto</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>mailcc</name>
+        <rename>mailcc</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>mailtest</name>
+        <rename>mailtest</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>filename</name>
+        <rename>filename</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>subject</name>
+        <rename>subject</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>comment</name>
+        <rename>comment</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>sender</name>
+        <rename>sender</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>comment_1</name>
+        <rename>comment_1</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>544</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Not Send</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DWH</connection>
+    <schema>oper</schema>
+    <table>T_PROWIZJE_SEND_ERR</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1008</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>OK</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>DWH</connection>
+    <schema>oper</schema>
+    <table>T_PROWIZJE_SEND_OK</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1120</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Replace in string</name>
+    <type>ReplaceString</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>mailto</in_stream_name>
+        <out_stream_name>mailto_done</out_stream_name>
+        <use_regex>no</use_regex>
+        <replace_string>&#x3b;</replace_string>
+        <replace_by_string>,</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+      <field>
+        <in_stream_name>mailcc</in_stream_name>
+        <out_stream_name>mailcc_done</out_stream_name>
+        <use_regex>no</use_regex>
+        <replace_string>&#x3b;</replace_string>
+        <replace_by_string>,</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>672</xloc>
+      <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>V_MONTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KONTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMAIL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DW1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DW2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DATA_UMOWY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NUMER_UMOWY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>RODZAJ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BOOKING_DATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>RACH_NR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ADR_KORESP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NAZWA_BANKU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NR_KONTA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SUMA_SKL_SP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_EM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_RENT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_CHOR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KOSZT_UZ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PODSTAWA_OP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>POD_DOCH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_UB_ZDR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_UB_ZDRO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>POD_US</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DO_WYPLATY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KWOTA_SLOWNIE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLAGA_ROZLICZENIE_U</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>UWAGI</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ILE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KONTO_F</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NAZWISKO_IMIE_F</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailcc</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailtest</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>filename</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>subject</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailto_done</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailcc_done</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>short_filename</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1008</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>V_MONTH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KONTO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>EMAIL</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DW1</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DW2</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DATA_UMOWY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NUMER_UMOWY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>RODZAJ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>STATUS</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>BOOKING_DATE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>RACH_NR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ADR_KORESP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NAZWA_BANKU</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NR_KONTA</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SUMA_SKL_SP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_EM</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_RENT</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_CHOR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KOSZT_UZ</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>PODSTAWA_OP</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>POD_DOCH</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_UB_ZDR</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>SKL_UB_ZDRO</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>POD_US</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>DO_WYPLATY</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KWOTA_SLOWNIE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>FLAGA_ROZLICZENIE_U</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>UWAGI</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>ILE</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>KONTO_F</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>NAZWISKO_IMIE_F</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailto</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailcc</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailtest</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>filename</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>subject</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailto_done</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>mailcc_done</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>short_filename</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1120</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>KONTO</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>256</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>short_filename_cut</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>896</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows 3</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>&#x25;&#x25;java.io.tmpdir&#x25;&#x25;</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>filename</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>784</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Strings cut</name>
+    <type>StringCut</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>short_filename</in_stream_name>
+        <out_stream_name>short_filename_cut</out_stream_name>
+        <cut_from>9</cut_from>
+        <cut_to>19</cut_to>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>896</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>mail body</name>
+    <type>DataGrid</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>r1</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>r2</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>r3</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>r4</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>r5</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>r6</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>r7</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <data>
+      <line> <item>Witam, &#x3c;br&#x3e; W za&#x142;&#x105;czeniu przesy&#x142;am zestawienie dotycz&#x105;ce nale&#x17c;nych prowizji za </item><item>Bardzo prosz&#x119; o zapoznanie si&#x119; z za&#x142;&#x105;cznikiem, wydrukowanie zestawienia oraz podpis na dokumencie. Podpis na dokumencie jest jednoznaczny z jego akceptacj&#x105;. </item><item>&#x3c;br&#x3e;&#x3c;br&#x3e; Dodatkowo prosz&#x119; o wystawienie faktury na kwot&#x119; &#x3c;b&#x3e;</item><item>W tytule faktury prosz&#x119; o umieszczenie&#x3a; &#x3c;b&#x3e; Po&#x15b;rednictwo finansowe za miesi&#x105;c</item><item>Tak zaakceptowane zestawienie oraz faktur&#x119; prosz&#x119; odes&#x142;a&#x107; niezw&#x142;ocznie na adres e-mail&#x3a; finance&#x40;axcesspoland.pl &#x3c;br&#x3e; i drog&#x105; korespondencyjn&#x105; na adres&#x3a; &#x3c;br&#x3e; Axcess Financial Poland Sp. z o.o. &#x3c;br&#x3e; ul.Taneczna 18 &#x3c;br&#x3e; 02-829 Warszawa  &#x3c;br&#x3e; &#x28;mo&#x17c;na do&#x142;&#x105;czy&#x107; do orygina&#x142;&#xf3;w dokument&#xf3;w po&#x17c;yczkowych&#x29;.  &#x3c;br&#x3e;&#x3c;br&#x3e; Pozdrawiamy, &#x3c;b&#x3e;&#x3c;p style&#x3d;&#x22;color&#x3a;rgb&#x28;0, 0, 255&#x29;&#x3b;&#x22;&#x3e;  Dzia&#x142; Rozlicze&#x144; &#x3c;&#x2f;p&#x3e;&#x3c;&#x2f;b&#x3e;</item><item>Niniejsza wiadomo&#x15b;&#x107; jest przeznaczona wy&#x142;&#x105;cznie dla osoby lub podmiotu, do kt&#xf3;rego jest adresowana i zawiera istotne informacje handlowe, kt&#xf3;re s&#x105; zastrze&#x17c;one, uprzywilejowane, poufne i&#x2f;lub w inny spos&#xf3;b chronione przed ujawnieniem. &#x3c;br&#x3e;Je&#x15b;li otrzyma&#x142;e&#x15b;&#x2f;otrzyma&#x142;a&#x15b; nieniejsz&#x105; wiadomo&#x15b;&#x107; w wyniku b&#x142;&#x119;du, jakiekolwiek jej przegl&#x105;danie, wykorzystanie, ujawnienie, rozpowszechnienie lub kopiowanie jest surowo zabronione. Prosze o trwa&#x142;e usuni&#x119;cie otrzymanej wiadomo&#x15b;ci bez zachowania kopii w &#x17c;adnej postaci. O b&#x142;&#x119;dnym zaadresowaniu wiadomo&#x15b;ci prosimy niezw&#x142;ocznie poinformowa&#x107;nadawc&#x119; i usun&#x105;&#x107; wiadomo&#x15b;&#x107;. </item><item/> </line>
+    </data>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>432</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

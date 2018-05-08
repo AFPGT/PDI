@@ -1,0 +1,1 @@
+/u01/app/obi/user_project/domains/bi/bitools/bin/./start.sh  > /dev/null 2>&1 &

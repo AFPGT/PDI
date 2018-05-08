@@ -1,0 +1,23 @@
+Save repository element : /Koliber/Get Error Data : Checked in
+Save repository element : /Koliber/Get MIS_DATA : Checked in
+Save repository element : /Koliber/Set Done : Checked in
+Save repository element : /Loger/Get Previous Result : Checked in
+Save repository element : /Loger/Write Log : Checked in
+Save repository element : /Loger/Write Task Log : Checked in
+Save repository element : /Shared/Check Start Task : Checked in
+Save repository element : /Shared/Check Step Status : Checked in
+Save repository element : /Shared/Run Procedure : Checked in
+Save repository element : /Koliber/Koliber : Checked in
+Save repository element : /Koliber/Koliber : import object reference specification
+Creating database: local
+Save repository element : local : Creation of initial version
+Updating database connection   {0} 
+Save repository element : local : Modification by user
+Updating database connection   {0} 
+Save repository element : local : Modification by user
+Updating database connection   {0} 
+Save repository element : local : Modification by user
+Rename transformation : Renamed from xml output Report to xml output report1
+Rename transformation : Renamed from Ged PDF to Get PDF
+Rename job : Renamed from J_SEK to Start_Sek_Docs
+Rename transformation : Renamed from bleble to Set Files Name

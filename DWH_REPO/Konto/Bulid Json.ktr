@@ -1,0 +1,1292 @@
+<transformation>
+  <info>
+    <name>Bulid Json</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/Konto</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>N</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2017/08/14 11:12:04.445</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2017/08/14 11:20:00.285</modified_date>
+    <key_for_session_key />
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>DWH</name>
+    <server>192.168.204.114</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>DWH</database>
+    <port>1521</port>
+    <username>axcess</username>
+    <password>Encrypted 2be98afc82ff3caa0b24b8448f386a58e</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1521</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Get All WN</from>
+      <to>Group by wnioski</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Group by wnioski</from>
+      <to>Sort Nr Umowy</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort Nr Umowy</from>
+      <to>Merge INSTALLMENTS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Group by raty</from>
+      <to>Sort Raty</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Raty</from>
+      <to>Group by raty</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort Raty</from>
+      <to>Merge INSTALLMENTS</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Raty Zapadłe</from>
+      <to>Sort by wniosek</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Raty Zapadłe data</from>
+      <to>Raty Zapadłe</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort by wniosek</from>
+      <to>Merge REPAID</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge INSTALLMENTS</from>
+      <to>Merge REPAID</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge REPAID</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Get All WN</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH</connection>
+    <sql>SELECT *
+FROM
+  (SELECT um.numer            AS numer_umowy ,
+    www.identyfikator_wniosku AS numer_wniosku ,
+    www.id_wniosku            AS id_wniosku ,
+    www.kwota_wnioskowana     AS appliedforprincipalamount ,
+    www.id_wniosku            AS lenderLoanApplicationId ,
+    'PLN'                     AS currency ,
+    kontomatik_session_id     AS kontomatikSessionIds ,
+    TO_CHAR(stat.ts,'YYYY-MM-DD')
+    || 'T'
+    || TO_CHAR(stat.ts,'HH24:MI:SS')
+    || 'Z'                    AS timestamp_decision ,
+    um.kwota_kapitalu         AS approvedPrincipalAmount ,
+    um.klient_id              AS lenderLendeeId ,
+    SUBSTR(um.numer,9,8)      AS lenderLoanId ,
+    CASE
+      WHEN stat.nowy_kod IN ('UXT','UX','ODR','ABZ','ANU','ATR','ODW','ORW')
+      THEN 'rejected'
+      WHEN stat.nowy_kod = 'ZRW'
+      THEN 'approved'
+      WHEN stat.nowy_kod = 'WAW'
+      THEN 'applied'
+      WHEN stat.nowy_kod = 'ODS'
+      THEN 'cancelled'
+    END     AS name_wn ,
+    -99     AS daypastdue_wn ,
+    1       AS record_type_wn ,
+    0       AS dueamount_wn ,
+    sysdate AS refresh_date
+  FROM oper.t_kon_temp www
+    -- wnioski
+  INNER JOIN axcess.t_wnioski_all wn
+  ON www.identyfikator_wniosku = wn.identyfikator
+    -- umowy
+  LEFT JOIN sys_kredyty.v_ax_umowy@berberys_ara_st um
+  ON wn.umowa_id = um.numer
+    -- statusy wniosków
+  INNER JOIN
+    (SELECT nowy_kod,
+      nr_wniosku,
+      MIN(ts) ts
+    FROM sys_credit.v_api_historia_statusow@berberys_st
+    INNER JOIN oper.t_kon_temp
+    ON identyfikator_wniosku = nr_wniosku
+    WHERE nowy_kod          IN ('WAW')
+    GROUP BY nowy_kod,
+      nr_wniosku
+    UNION ALL
+    SELECT nowy_kod,
+      nr_wniosku,
+      MAX(ts) ts
+    FROM sys_credit.v_api_historia_statusow@berberys_st
+    INNER JOIN oper.t_kon_temp
+    ON identyfikator_wniosku = nr_wniosku
+    WHERE nowy_kod          IN ('UXT','UX','ODR','ABZ','ANU','ATR','ODW','ODS','ORW','ZRW')
+    GROUP BY nowy_kod,
+      nr_wniosku
+    ) stat ON www.identyfikator_wniosku = stat.nr_wniosku
+  LEFT JOIN oper.t_kon_defaulted defo
+  ON defo.numer_umowy = um.numer
+  where defo.numer_umowy is null
+  UNION ALL
+  select 
+     um.numer                               as numer_umowy
+    ,temp.identyfikator_wniosku             as numer_wniosku
+    ,temp.id_wniosku                        as id_wniosku
+    ,temp.kwota_wnioskowana                 as appliedforprincipalamount
+    ,temp.id_wniosku                        as lenderLoanApplicationId
+    ,'PLN'                                  as currency
+    ,temp.kontomatik_session_id             as kontomatikSessionIds
+    ,to_char(um.data_wyplaty,'YYYY-MM-DD')  as dueDate_rat
+    ,um.kwota_kapitalu                      as approvedPrincipalAmount
+    ,um.klient_id                           as lenderLendeeId
+    ,SUBSTR(um.numer,9,8)                   as lenderLoanId
+    ,'repaid'                               as name_wn
+    ,0                                    as dayPastDue_rat    
+    ,round(um.kwota_kapitalu * 0.25,2)      as dueAmount_rat
+    ,3                                      as record_zap
+ -- ,1                                      as row_number_zap
+    ,sysdate                                as refresh_date
+from sys_kredyty.v_ax_umowy@berberys_ara_st um
+           inner join oper.t_kon_temp       temp
+                 on substr(um.numer,9,8) = temp.id_wniosku
+           left join oper.t_kon_defaulted defo
+                 on defo.numer_umowy = um.numer
+     where produkt_kod like '%UPFR%%' and defo.numer_umowy is null  
+
+  )SUB
+ORDER BY SUB.numer_wniosku, SUB.timestamp_decision
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by wnioski</name>
+    <type>GroupBy</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore />
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname />
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>NUMER_WNIOSKU</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>APPLIEDFORPRINCIPALAMOUNT</aggregate>
+        <subject>APPLIEDFORPRINCIPALAMOUNT</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>LENDERLOANAPPLICATIONID</aggregate>
+        <subject>LENDERLOANAPPLICATIONID</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>CURRENCY</aggregate>
+        <subject>CURRENCY</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>APPROVEDPRINCIPALAMOUNT</aggregate>
+        <subject>APPROVEDPRINCIPALAMOUNT</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>LENDERLENDEEID</aggregate>
+        <subject>LENDERLENDEEID</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>LENDERLOANID</aggregate>
+        <subject>LENDERLOANID</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>KONTOMATIKSESSIONIDS</aggregate>
+        <subject>KONTOMATIKSESSIONIDS</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>REFRESH_DATE</aggregate>
+        <subject>REFRESH_DATE</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>NUMER_UMOWY</aggregate>
+        <subject>NUMER_UMOWY</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>TIMESTAMP_DECISION</aggregate>
+        <subject>TIMESTAMP_DECISION</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>NAME_WN</aggregate>
+        <subject>NAME_WN</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>DAYPASTDUE_WN</aggregate>
+        <subject>DAYPASTDUE_WN</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>RECORD_TYPE_WN</aggregate>
+        <subject>RECORD_TYPE_WN</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>DUEAMOUNT_WN</aggregate>
+        <subject>DUEAMOUNT_WN</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>record_count_wn</aggregate>
+        <subject />
+        <type>COUNT_ANY</type>
+        <valuefield />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort Nr Umowy</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>100000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>NUMER_UMOWY</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge INSTALLMENTS</name>
+    <type>MergeJoin</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>LEFT OUTER</join_type>
+    <step1>Sort Nr Umowy</step1>
+    <step2>Sort Raty</step2>
+    <keys_1>
+      <key>NUMER_UMOWY</key>
+    </keys_1>
+    <keys_2>
+      <key>NUMER_UMOWY</key>
+    </keys_2>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by raty</name>
+    <type>GroupBy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore />
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname />
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>NUMER_UMOWY</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>DUEAMOUNT</aggregate>
+        <subject>DUEAMOUNT_RAT</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>DUEDATE</aggregate>
+        <subject>DUEDATE_RAT</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>DAYPASTDUE</aggregate>
+        <subject>DAYPASTDUE_RAT</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>ROW_NUMBER_RATY</aggregate>
+        <subject>ROW_NUMBER_RATY</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>totalAmountDue</aggregate>
+        <subject>DUEAMOUNT_RAT</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>NUMER_RATY</aggregate>
+        <subject>NUMER_RATY</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Raty</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH</connection>
+    <sql>select * from (
+select 
+     um.numer                               as numer_umowy
+    ,round(um.kwota_kapitalu * 0.25,2)      as dueAmount_rat
+    ,to_char(um.data_wyplaty,'YYYY-MM-DD')  as dueDate_rat
+    ,to_number(0)                           as dayPastDue_rat
+    ,1                                      as row_number_raty
+    ,0                                      as numer_raty
+from sys_kredyty.v_ax_umowy@berberys_ara_st um
+           inner join oper.t_kon_temp       temp
+                 on substr(um.numer,9,8) = temp.id_wniosku
+           left join oper.t_kon_defaulted defo
+                 on defo.numer_umowy = um.numer
+     where produkt_kod like '%UPFR%%' and defo.numer_umowy is null     
+UNION ALL
+select  
+    um.numer                               as numer_umowy
+   ,nvl(rat.kapital,0) +
+    nvl(rat.prowizja_za_udziel,0) +
+    nvl(rat.prowizja_za_wypl,0) +
+    nvl(rat.prowizja_za_serwis,0) +
+    nvl(rat.odsetki,0)                     as dueAmount_rat
+   ,to_char(rat.data,'YYYY-MM-DD')         as dueDate_rat
+   ,to_number(nvl(rat.dpd,0))              as dayPastDue_rat
+   ,1                                      as row_number_raty
+   ,rat.numer                              as numer_raty
+from 
+           sys_kredyty.v_ax_harmonogramy@berberys_ara_st har 
+           inner join sys_kredyty.v_ax_raty@berberys_ara_st rat
+              on har.id = rat.harm_id
+           left join sys_kredyty.v_ax_umowy@berberys_ara_st um
+              on har.kredyt_id = um.id
+           inner join oper.t_kon_temp  temp
+              on substr(um.numer,9,8) = temp.id_wniosku
+           left join oper.t_kon_defaulted defo
+                 on defo.numer_umowy = um.numer
+           where  har.status_kod = 'A' and defo.numer_umowy is null )sub
+order by sub.numer_umowy asc, sub.numer_raty asc</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort Raty</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>NUMER_UMOWY</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge REPAID</name>
+    <type>MergeJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>LEFT OUTER</join_type>
+    <step1>Merge INSTALLMENTS</step1>
+    <step2>Sort by wniosek</step2>
+    <keys_1>
+      <key>NUMER_UMOWY</key>
+    </keys_1>
+    <keys_2>
+      <key>NUMER_UMOWY_ZAP</key>
+    </keys_2>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Raty Zapadłe</name>
+    <type>GroupBy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore />
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname />
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>NUMER_UMOWY_ZAP</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>DUEAMOUNT_ZAP</aggregate>
+        <subject>DUEAMOUNT_ZAP</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>DUEDATE_ZAP</aggregate>
+        <subject>DUEDATE_ZAP</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>DAYPASTDUE_ZAP</aggregate>
+        <subject>DAYPASTDUE_ZAP</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>NAME_ZAP</aggregate>
+        <subject>NAME_ZAP</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>RECORD_ZAP</aggregate>
+        <subject>RECORD_ZAP</subject>
+        <type>CONCAT_COMMA</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>ROW_NUMBER_ZAP</aggregate>
+        <subject>ROW_NUMBER_ZAP</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Raty Zapadłe data</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH</connection>
+    <sql>select * from (select
+    um.numer           as numer_umowy_zap
+   ,temp.id_wniosku    as numer_wniosku_zap
+   ,nvl(rat.kapital,0) +
+    nvl(rat.prowizja_za_udziel,0) +
+    nvl(rat.prowizja_za_wypl,0) +
+    nvl(rat.prowizja_za_serwis,0) +
+    nvl(rat.odsetki,0) as dueAmount_zap
+   ,to_char(rat.data_splaty,'YYYY-MM-DD')  
+                       as dueDate_zap
+   ,case when rat.dpd &lt; 0 then '0' else rat.dpd
+                   end as dayPastDue_zap
+   ,'repaid'           as name_zap
+   ,3                  as record_zap
+   ,1                  as row_number_zap
+from 
+           sys_kredyty.v_ax_harmonogramy@berberys_ara_st har 
+           inner join sys_kredyty.v_ax_raty@berberys_ara_st rat
+              on har.id = rat.harm_id
+           left join sys_kredyty.v_ax_umowy@berberys_ara_st um
+            on har.kredyt_id = um.id   
+         inner join oper.t_kon_temp  temp
+            on to_number(substr(um.numer,9,8)) = temp.id_wniosku
+         left join oper.t_kon_defaulted defo
+                 on defo.numer_umowy = um.numer
+         where  har.status_kod = 'A'  and rat.data_splaty is not null and kwota_otwarta &lt;=5 and defo.numer_umowy is null and um.status &lt;&gt; 'ODS'
+)SUB
+order by sub.numer_umowy_zap,sub.dueDate_zap
+ 
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort by wniosek</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>NUMER_UMOWY_ZAP</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>2</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>352</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

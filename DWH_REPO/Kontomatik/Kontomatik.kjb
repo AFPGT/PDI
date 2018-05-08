@@ -1,0 +1,1125 @@
+<job>
+  <name>Kontomatik</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2017&#x2f;07&#x2f;13 11&#x3a;15&#x3a;20.693</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2017&#x2f;08&#x2f;02 13&#x3a;50&#x3a;47.147</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>DWH</name>
+    <server>192.168.204.114</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>DWH</database>
+    <port>1521</port>
+    <username>axcess</username>
+    <password>Encrypted 2be98afc82ff3caa0b24b8448f386a58e</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>16</xloc>
+      <yloc>128</yloc>
+      </entry>
+    <entry>
+      <name>DUMMY</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>N</start>
+      <dummy>Y</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>720</xloc>
+      <yloc>80</yloc>
+      </entry>
+    <entry>
+      <name>Success</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>720</xloc>
+      <yloc>352</yloc>
+      </entry>
+    <entry>
+      <name>DB po&#x142;&#x105;czenie</name>
+      <description/>
+      <type>CHECK_DB_CONNECTIONS</type>
+      <connections>
+        <connection>
+          <name>DWH</name>
+          <waitfor>1</waitfor>
+          <waittime>millisecond</waittime>
+        </connection>
+      </connections>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>Wy&#x15b;lij b&#x142;&#x105;d</name>
+      <description/>
+      <type>MAIL</type>
+      <server>&#x24;&#x7b;ODS_SMTP_SERVER&#x7d;</server>
+      <port>&#x24;&#x7b;ODS_SMTP_PORT&#x7d;</port>
+      <destination>reports_poland&#x40;axcesspoland.pl</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>&#x24;&#x7b;ODS_SENDER_MAIL&#x7d;</replyto>
+      <replytoname>&#x24;&#x7b;ODS_SMTP_NAME&#x7d;</replytoname>
+      <subject>&#x5b;Errro&#x5d; Kontomatik - tworzenie pliku Json</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Pr&#xf3;ba po&#x142;&#x105;czenia z baz&#x105; DWH zako&#x144;czy&#x142;a si&#x119; niepowodzeniem. &#x3c;br&#x3e;&#xd;&#xa;&#x3c;br&#x3e;&#xd;&#xa;Reporting Team Poland - Axcess Financial &#x3c;br&#x3e;&#xd;&#xa;Email&#x3a; reports_poland&#x40;axcesspoland.pl &#xd;&#xd;&#xa;</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>N</use_auth>
+      <use_secure_auth>N</use_secure_auth>
+      <auth_user/>
+      <auth_password>Encrypted </auth_password>
+      <only_comment>Y</only_comment>
+      <use_HTML>Y</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>windows-1250</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>SSL</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>448</yloc>
+      </entry>
+    <entry>
+      <name>Success 2</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>192</xloc>
+      <yloc>448</yloc>
+      </entry>
+    <entry>
+      <name>Create JSON</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Create JSON</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>336</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>Wy&#x15b;lij b&#x142;&#x105;d &#x142;adowania</name>
+      <description/>
+      <type>MAIL</type>
+      <server>&#x24;&#x7b;ODS_SMTP_SERVER&#x7d;</server>
+      <port>&#x24;&#x7b;ODS_SMTP_PORT&#x7d;</port>
+      <destination>reports_poland&#x40;axcesspoland.pl</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>&#x24;&#x7b;ODS_SENDER_MAIL&#x7d;</replyto>
+      <replytoname>&#x24;&#x7b;ODS_SMTP_NAME&#x7d;</replytoname>
+      <subject>&#x5b;Errro&#x5d; Kontomatik - tworzenie pliku Json</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>B&#x142;ad zasilania  &#x5b;TASK ID&#x3a; &#x24;&#x7b;TASK_ID&#x7d;&#x5d;  - INFO&#x3a; &#x24;&#x7b;INFO&#x7d;&#x3c;br&#x3e;&#xd;&#xa;&#x3c;br&#x3e;&#xd;&#xa;Reporting Team Poland - Axcess Financial &#x3c;br&#x3e;&#xd;&#xa;Email&#x3a; reports_poland&#x40;axcesspoland.pl &#xd;&#xd;&#xa;</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>N</use_auth>
+      <use_secure_auth>N</use_secure_auth>
+      <auth_user/>
+      <auth_password>Encrypted </auth_password>
+      <only_comment>Y</only_comment>
+      <use_HTML>Y</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>windows-1250</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>SSL</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>        <filetype>ERRORLINE</filetype>
+      </filetypes>      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>464</xloc>
+      <yloc>448</yloc>
+      </entry>
+    <entry>
+      <name>Logger Kontomatik -Error</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik -Error</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>Y</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>3</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Log b&#x142;edu&#x3a; &#x24;&#x7b;PREV_LOG&#x7d;</value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Error</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;TASK_ID&#x7d;</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>464</xloc>
+      <yloc>352</yloc>
+      </entry>
+    <entry>
+      <name>Get Previous Result</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Get Previous Result</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>336</xloc>
+      <yloc>272</yloc>
+      </entry>
+    <entry>
+      <name>Log Job Start</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Start Procesu Kontomatik </value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Info Log</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>9999</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>16</yloc>
+      </entry>
+    <entry>
+      <name>Log start Task - 1</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Start - utworzenie JSON</value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Info Log</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>208</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>Log Koniec Task 2</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Start - Zapisanie JSON-&#xf3;w</value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Info Log</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>592</xloc>
+      <yloc>80</yloc>
+      </entry>
+    <entry>
+      <name>Log Job Koniec</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Koniec Procesu Kontomatik </value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Info Log - zasilanie zako&#x144;czone pomy&#x15b;lnie</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>9999</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>720</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>Parametry T2</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <replacevars>N</replacevars>
+      <filename/>
+      <file_variable_type>CURRENT_JOB</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>TASK_ID</variable_name>
+          <variable_value>2</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+        <field>
+          <variable_name>INFO</variable_name>
+          <variable_value>B&#x142;ad tworzeni pliku JSON</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>464</xloc>
+      <yloc>272</yloc>
+      </entry>
+    <entry>
+      <name>Log Job B&#x142;&#x105;d</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>3</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>B&#x142;ad Procesu Kontomatik - brak po&#x142;&#x105;czenia z baz&#x105;  &#x24;&#x7b;ODS_DBNAME_DB&#x7d;</value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Error</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>9999</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>288</yloc>
+      </entry>
+    <entry>
+      <name>Log Job Koniec B&#x142;ad</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>3</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Proses zako&#x144;czony b&#x142;&#x119;dem</value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Error</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>9999</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>336</xloc>
+      <yloc>448</yloc>
+      </entry>
+    <entry>
+      <name>start joba</name>
+      <description/>
+      <type>MAIL</type>
+      <server>&#x24;&#x7b;ODS_SMTP_SERVER&#x7d;</server>
+      <port>&#x24;&#x7b;ODS_SMTP_PORT&#x7d;</port>
+      <destination>reports_poland&#x40;axcesspoland.pl</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>&#x24;&#x7b;ODS_SENDER_MAIL&#x7d;</replyto>
+      <replytoname>&#x24;&#x7b;ODS_SMTP_NAME&#x7d;</replytoname>
+      <subject>&#x5b;Info&#x5d; Kontomatik - tworzenie pliku Json</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Rozpocz&#x119;to proces tworzenuia pliku JSON &#x3c;br&#x3e;&#xd;&#xa;&#x3c;br&#x3e;&#xd;&#xa;Reporting Team Poland - Axcess Financial &#x3c;br&#x3e;&#xd;&#xa;Email&#x3a; reports_poland&#x40;axcesspoland.pl &#xd;&#xd;&#xa;</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>N</use_auth>
+      <use_secure_auth>N</use_secure_auth>
+      <auth_user/>
+      <auth_password>Encrypted </auth_password>
+      <only_comment>Y</only_comment>
+      <use_HTML>Y</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>windows-1250</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>SSL</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>16</xloc>
+      <yloc>16</yloc>
+      </entry>
+    <entry>
+      <name>Koniec Joba</name>
+      <description/>
+      <type>MAIL</type>
+      <server>&#x24;&#x7b;ODS_SMTP_SERVER&#x7d;</server>
+      <port>&#x24;&#x7b;ODS_SMTP_PORT&#x7d;</port>
+      <destination>reports_poland&#x40;axcesspoland.pl</destination>
+      <destinationCc/>
+      <destinationBCc/>
+      <replyto>&#x24;&#x7b;ODS_SENDER_MAIL&#x7d;</replyto>
+      <replytoname>&#x24;&#x7b;ODS_SMTP_NAME&#x7d;</replytoname>
+      <subject>&#x5b;Info&#x5d; Kontomatik - tworzenie pliku Json</subject>
+      <include_date>N</include_date>
+      <contact_person/>
+      <contact_phone/>
+      <comment>Zako&#x144;czono proces tworzenuia pliku JSON &#x3c;br&#x3e;&#xd;&#xa;&#x3c;br&#x3e;&#xd;&#xa;Reporting Team Poland - Axcess Financial &#x3c;br&#x3e;&#xd;&#xa;Email&#x3a; reports_poland&#x40;axcesspoland.pl &#xd;&#xd;&#xa;</comment>
+      <include_files>N</include_files>
+      <zip_files>N</zip_files>
+      <zip_name/>
+      <use_auth>N</use_auth>
+      <use_secure_auth>N</use_secure_auth>
+      <auth_user/>
+      <auth_password>Encrypted </auth_password>
+      <only_comment>Y</only_comment>
+      <use_HTML>Y</use_HTML>
+      <use_Priority>N</use_Priority>
+      <encoding>windows-1250</encoding>
+      <priority>normal</priority>
+      <importance>normal</importance>
+      <sensitivity>normal</sensitivity>
+      <secureconnectiontype>SSL</secureconnectiontype>
+      <replyToAddresses/>
+      <filetypes>      </filetypes>      <embeddedimages>
+      </embeddedimages>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>720</xloc>
+      <yloc>256</yloc>
+      </entry>
+    <entry>
+      <name>Parametry T1</name>
+      <description/>
+      <type>SET_VARIABLES</type>
+      <replacevars>N</replacevars>
+      <filename/>
+      <file_variable_type>CURRENT_JOB</file_variable_type>
+      <fields>
+        <field>
+          <variable_name>TASK_ID</variable_name>
+          <variable_value>1</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+        <field>
+          <variable_name>INFO</variable_name>
+          <variable_value>B&#x142;ad zasilania tabeli JSON</variable_value>
+          <variable_type>JVM</variable_type>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>208</xloc>
+      <yloc>272</yloc>
+      </entry>
+    <entry>
+      <name>Log Koniec Task 1</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Start - utworzenie JSON</value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Info Log</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>464</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>Log start Task - 2</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Logger Kontomatik</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>LOG_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>LOG_INFO</name>
+            <stream_name/>
+            <value>Start - Zapisanie JSON-&#xf3;w</value>
+            </parameter>            <parameter>            <name>LOG_NUMER</name>
+            <stream_name/>
+            <value>0</value>
+            </parameter>            <parameter>            <name>LOG_TEXT</name>
+            <stream_name/>
+            <value>Info Log</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>464</xloc>
+      <yloc>80</yloc>
+      </entry>
+    <entry>
+      <name>Zapisanie Pliku JSON</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Zapisanie Pliku JSON</transname>
+      <directory>&#x2f;Kontomatik</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>COUNT_INSERT</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;COUNT_INSERT&#x7d;</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>592</xloc>
+      <yloc>176</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Wy&#x15b;lij b&#x142;&#x105;d</from>
+      <to>Success 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Logger Kontomatik -Error</from>
+      <to>Wy&#x15b;lij b&#x142;&#x105;d &#x142;adowania</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Get Previous Result</from>
+      <to>Logger Kontomatik -Error</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log Job Start</from>
+      <to>DB po&#x142;&#x105;czenie</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>DUMMY</from>
+      <to>Log Job Koniec</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>DB po&#x142;&#x105;czenie</from>
+      <to>Log Job B&#x142;&#x105;d</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Log Job B&#x142;&#x105;d</from>
+      <to>Wy&#x15b;lij b&#x142;&#x105;d</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Wy&#x15b;lij b&#x142;&#x105;d &#x142;adowania</from>
+      <to>Log Job Koniec B&#x142;ad</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log Job Koniec B&#x142;ad</from>
+      <to>Success 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>DB po&#x142;&#x105;czenie</from>
+      <to>Log start Task - 1</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>start joba</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>start joba</from>
+      <to>Log Job Start</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log Job Koniec</from>
+      <to>Koniec Joba</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Koniec Joba</from>
+      <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Parametry T1</from>
+      <to>Get Previous Result</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log start Task - 1</from>
+      <to>Create JSON</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Create JSON</from>
+      <to>Get Previous Result</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Create JSON</from>
+      <to>Parametry T1</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Parametry T2</from>
+      <to>Get Previous Result</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Create JSON</from>
+      <to>Log Koniec Task 1</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Log Koniec Task 1</from>
+      <to>Log start Task - 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log start Task - 2</from>
+      <to>Zapisanie Pliku JSON</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Zapisanie Pliku JSON</from>
+      <to>Log Koniec Task 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Log Koniec Task 2</from>
+      <to>DUMMY</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Zapisanie Pliku JSON</from>
+      <to>Parametry T2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+
+</job>

@@ -1,0 +1,1037 @@
+<job>
+  <name>Koliber_Chaneged</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;Koliber</directory>
+  <created_user/>
+  <created_date>2016&#x2f;08&#x2f;01 10&#x3a;31&#x3a;51.153</created_date>
+  <modified_user>admin</modified_user>
+  <modified_date>2016&#x2f;09&#x2f;01 16&#x3a;45&#x3a;59.738</modified_date>
+    <parameters>
+        <parameter>
+            <name>P_FLAG_COL</name>
+            <default_value>DSK_FLAG</default_value>
+            <description/>
+        </parameter>
+        <parameter>
+            <name>P_SUBSYSTEM_NAME</name>
+            <default_value>ODS_Koliber</default_value>
+            <description/>
+        </parameter>
+        <parameter>
+            <name>P_TASK_ID</name>
+            <default_value>1</default_value>
+            <description/>
+        </parameter>
+    </parameters>
+  <connection>
+    <name>local</name>
+    <server>&#x24;&#x7b;ODS_HOST_DB&#x7d;</server>
+    <type>ORACLE</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;ODS_DBNAME_DB&#x7d;</database>
+    <port>1521</port>
+    <username>&#x24;&#x7b;ODS_USER_DB&#x7d;</username>
+    <password>&#x24;&#x7b;ODS_PASS_DB&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1521</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+         <slaveserver><name>Slave2</name><hostname>localhost</hostname><port>8083</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>Slave1</name><hostname>localhost</hostname><port>8082</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>Master</name><hostname>localhost</hostname><port>8081</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>DWH0_ETL</name><hostname>dwh0</hostname><port>8888</port><webAppName/><username>cluster</username><password>Encrypted 3363654bd0eb9a8139d486ab9b3fbb78e4b3a7d8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>ETL0</name><hostname>etl</hostname><port>8888</port><webAppName/><username>cluster</username><password>Encrypted 2be9897f0529fb790a726ad71cc86aa9b</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>ETL-DEVEL</name><hostname>etl-devel</hostname><port>8888</port><webAppName/><username>cluster</username><password>Encrypted 2be9897f0529fb790a726ad71cc86aa9b</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>OLAP0_ETL</name><hostname>olap0</hostname><port>8888</port><webAppName/><username>cluster</username><password>Encrypted 3363654bd0eb9a8139d486ab9b3fbb78e4b3a7d8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>Create file</name>
+      <description/>
+      <type>CREATE_FILE</type>
+      <filename>&#x24;&#x7b;ODS_WORK_DIR&#x7d;&#x5c;ODS_Koliber.ctrl</filename>
+      <fail_if_file_exists>Y</fail_if_file_exists>
+      <add_filename_result>N</add_filename_result>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>48</yloc>
+      </entry>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>16</xloc>
+      <yloc>48</yloc>
+      </entry>
+    <entry>
+      <name>Check Error</name>
+      <description/>
+      <type>SIMPLE_EVAL</type>
+      <valuetype>variable</valuetype>
+      <fieldname/>
+      <variablename>&#x24;&#x7b;V_FLAG_COL&#x7d;</variablename>
+      <fieldtype>string</fieldtype>
+      <mask/>
+      <comparevalue>-2</comparevalue>
+      <minvalue/>
+      <maxvalue/>
+      <successcondition>equal</successcondition>
+      <successnumbercondition>equal</successnumbercondition>
+      <successbooleancondition>false</successbooleancondition>
+      <successwhenvarset>N</successwhenvarset>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>832</xloc>
+      <yloc>528</yloc>
+      </entry>
+    <entry>
+      <name>Delete file</name>
+      <description/>
+      <type>DELETE_FILE</type>
+      <filename>&#x24;&#x7b;ODS_WORK_DIR&#x7d;&#x5c;ODS_Koliber.ctrl</filename>
+      <fail_if_file_not_exists>N</fail_if_file_not_exists>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>224</xloc>
+      <yloc>400</yloc>
+      </entry>
+    <entry>
+      <name>Check Step Status</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Check Step Status</transname>
+      <directory>&#x2f;Shared</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>Y</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>N</pass_all_parameters>
+            <parameter>            <name>P_FLAG_COL</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_FLAG_COL&#x7d;</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>832</xloc>
+      <yloc>320</yloc>
+      </entry>
+    <entry>
+      <name>Write Start Log</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Write Log</transname>
+      <directory>&#x2f;Loger</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>SUBSYSTEM_NAME</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_TASK_ID&#x7d;</value>
+            </parameter>            <parameter>            <name>TEXT_VALUE</name>
+            <stream_name/>
+            <value>Start.&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>LOG_TYPE_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>LOG</name>
+            <stream_name/>
+            <value>Info</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>224</xloc>
+      <yloc>48</yloc>
+      </entry>
+    <entry>
+      <name>Check Start Task</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Check Start Task</transname>
+      <directory>&#x2f;Shared</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>Y</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>P_FLAG_COL</name>
+            <stream_name/>
+            <value>DSK_FLAG</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>832</xloc>
+      <yloc>48</yloc>
+      </entry>
+    <entry>
+      <name>Write Error Log</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Write Log</transname>
+      <directory>&#x2f;Loger</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>SUBSYSTEM_NAME</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_TASK_ID&#x7d;</value>
+            </parameter>            <parameter>            <name>TEXT_VALUE</name>
+            <stream_name/>
+            <value>End Error. Check file log &#x21;&#x21;&#x21;</value>
+            </parameter>            <parameter>            <name>LOG</name>
+            <stream_name/>
+            <value>Error</value>
+            </parameter>            <parameter>            <name>LOG_TYPE_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>224</xloc>
+      <yloc>272</yloc>
+      </entry>
+    <entry>
+      <name>Check All Done</name>
+      <description/>
+      <type>SIMPLE_EVAL</type>
+      <valuetype>variable</valuetype>
+      <fieldname/>
+      <variablename>&#x24;&#x7b;V_ALL_DONE&#x7d;</variablename>
+      <fieldtype>string</fieldtype>
+      <mask/>
+      <comparevalue>1</comparevalue>
+      <minvalue/>
+      <maxvalue/>
+      <successcondition>equal</successcondition>
+      <successnumbercondition>equal</successnumbercondition>
+      <successbooleancondition>false</successbooleancondition>
+      <successwhenvarset>N</successwhenvarset>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>624</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>Get MIS_DATA</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Get MIS_DATA</transname>
+      <directory>&#x2f;Koliber</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_TASK_ID&#x7d;</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>352</xloc>
+      <yloc>48</yloc>
+      </entry>
+    <entry>
+      <name>Write End Log</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Write Log</transname>
+      <directory>&#x2f;Loger</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>N</pass_all_parameters>
+            <parameter>            <name>SUBSYSTEM_NAME</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>LOG</name>
+            <stream_name/>
+            <value>Info</value>
+            </parameter>            <parameter>            <name>TEXT_VALUE</name>
+            <stream_name/>
+            <value>End OK.&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>LOG_TYPE_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>400</xloc>
+      <yloc>400</yloc>
+      </entry>
+    <entry>
+      <name>Wait for Start</name>
+      <description/>
+      <type>WAIT_FOR_SQL</type>
+      <connection>local</connection>
+      <schemaname/>
+      <tablename/>
+      <success_condition>rows_count_greater</success_condition>
+      <rows_count_value>0</rows_count_value>
+      <is_custom_sql>Y</is_custom_sql>
+      <is_usevars>Y</is_usevars>
+      <custom_sql>SELECT&#xd;&#xa;  CAL_TABLE.ID&#xd;&#xa;FROM AXCESS.T_DWH_LOAD_CAL CAL_TABLE&#xd;&#xa;INNER JOIN AXCESS.T_TMP_TASK TMP_TABLE&#xd;&#xa;ON CAL_TABLE.ID &#x3d; TMP_TABLE.ID&#xd;&#xa;WHERE CAL_TABLE.DSK_FLAG &#x3d;100 </custom_sql>
+      <add_rows_result>N</add_rows_result>
+      <maximum_timeout>0</maximum_timeout>
+      <check_cycle_time>10</check_cycle_time>
+      <success_on_timeout>N</success_on_timeout>
+      <clear_result_rows>Y</clear_result_rows>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>720</xloc>
+      <yloc>48</yloc>
+      </entry>
+    <entry>
+      <name>Wait for End</name>
+      <description/>
+      <type>WAIT_FOR_SQL</type>
+      <connection>local</connection>
+      <schemaname/>
+      <tablename/>
+      <success_condition>rows_count_greater</success_condition>
+      <rows_count_value>0</rows_count_value>
+      <is_custom_sql>Y</is_custom_sql>
+      <is_usevars>N</is_usevars>
+      <custom_sql>SELECT&#xd;&#xa;     CAL_TABLE.ID&#xd;&#xa;FROM AXCESS.T_DWH_LOAD_CAL CAL_TABLE&#xd;&#xa;INNER JOIN  AXCESS.T_TMP_TASK TMP_TABLE&#xd;&#xa;ON CAL_TABLE.ID &#x3d; TMP_TABLE.ID&#xd;&#xa;WHERE CAL_TABLE.DSK_FLAG IS NOT NULL&#xd;&#xa;    AND CAL_TABLE.DSK_FLAG &#x3c;&#x3e; 100&#xd;&#xa;    AND TMP_TABLE.ST_STATUS &#x3d; 100&#xd;&#xa;&#xd;&#xa;</custom_sql>
+      <add_rows_result>N</add_rows_result>
+      <maximum_timeout>0</maximum_timeout>
+      <check_cycle_time>60</check_cycle_time>
+      <success_on_timeout>N</success_on_timeout>
+      <clear_result_rows>Y</clear_result_rows>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>832</xloc>
+      <yloc>160</yloc>
+      </entry>
+    <entry>
+      <name>All Done Setup</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Set Done</transname>
+      <directory>&#x2f;Koliber</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>P_TASK_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_TASK_ID&#x7d;</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>832</xloc>
+      <yloc>416</yloc>
+      </entry>
+    <entry>
+      <name>Success</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>400</yloc>
+      </entry>
+    <entry>
+      <name>Write Task Log</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Write Task Log</transname>
+      <directory>&#x2f;Loger</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>N</pass_all_parameters>
+            <parameter>            <name>SUBSYSTEM_NAME</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>LOG_TYPE_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>LOG</name>
+            <stream_name/>
+            <value>Info.Task</value>
+            </parameter>            <parameter>            <name>P_FLAG_COL</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_FLAG_COL&#x7d;</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>832</xloc>
+      <yloc>240</yloc>
+      </entry>
+    <entry>
+      <name>Mail Sender</name>
+      <description/>
+      <type>JOB</type>
+      <specification_method>rep_name</specification_method>
+      <job_object_id/>
+      <filename/>
+      <jobname>Mail Sender HTML</jobname>
+      <directory>&#x2f;Mail Sender</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <expand_remote_job>N</expand_remote_job>
+      <create_parent_folder>N</create_parent_folder>
+      <pass_export>N</pass_export>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>P_MAIL_SUBJECT</name>
+            <stream_name/>
+            <value>ODS SYSTEM - Error &#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>P_SUBSYSTEM_NAME</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>P_DWH_CAL_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;V_ID&#x7d;</value>
+            </parameter>            <parameter>            <name>P_TASK_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_TASK_ID&#x7d;</value>
+            </parameter>      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>640</xloc>
+      <yloc>528</yloc>
+      </entry>
+    <entry>
+      <name>Write Error File</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Write Log</transname>
+      <directory>&#x2f;Loger</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>SUBSYSTEM_NAME</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>1</value>
+            </parameter>            <parameter>            <name>TEXT_VALUE</name>
+            <stream_name/>
+            <value>Error.&#x24;&#x7b;SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>LOG</name>
+            <stream_name/>
+            <value>File &#x24;&#x7b;ODS_WORK_DIR&#x7d;&#x5c;ODS_Koliber.ctrl Exist &#x21;&#x21;&#x21;</value>
+            </parameter>            <parameter>            <name>LOG_TYPE_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>272</yloc>
+      </entry>
+    <entry>
+      <name>Run Procedure</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Run Procedure</transname>
+      <directory>&#x2f;Shared</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>P_PROCEDURE_NAME</name>
+            <stream_name/>
+            <value>axcess.PK_DSD_Load.p_dumpall_dsk</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>496</xloc>
+      <yloc>48</yloc>
+      </entry>
+    <entry>
+      <name>Write Error Proc</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>Write Log</transname>
+      <directory>&#x2f;Loger</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+            <parameter>            <name>SUBSYSTEM_NAME</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d;</value>
+            </parameter>            <parameter>            <name>TASK_ID</name>
+            <stream_name/>
+            <value>&#x24;&#x7b;P_TASK_ID&#x7d;</value>
+            </parameter>            <parameter>            <name>TEXT_VALUE</name>
+            <stream_name/>
+            <value>End Error &#x24;&#x7b;P_SUBSYSTEM_NAME&#x7d; Procedure Error</value>
+            </parameter>            <parameter>            <name>LOG</name>
+            <stream_name/>
+            <value>Error</value>
+            </parameter>            <parameter>            <name>LOG_TYPE_ID</name>
+            <stream_name/>
+            <value>2</value>
+            </parameter>      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>224</xloc>
+      <yloc>528</yloc>
+      </entry>
+    <entry>
+      <name>Check Done Err</name>
+      <description/>
+      <type>EVAL_TABLE_CONTENT</type>
+      <connection>local</connection>
+      <schemaname/>
+      <tablename/>
+      <success_condition>rows_count_greater</success_condition>
+      <limit>0</limit>
+      <is_custom_sql>Y</is_custom_sql>
+      <is_usevars>N</is_usevars>
+      <custom_sql>SELECT ID FROM T_TMP_TASK&#xd;&#xa;MINUS&#xd;&#xa;SELECT CAL.ID FROM T_DWH_LOAD_CAL CAL&#xd;&#xa;INNER JOIN T_TMP_TASK&#xd;&#xa;ON T_TMP_TASK.ID &#x3d; CAL.ID&#xd;&#xa;WHERE CAL.DSK_FLAG NOT IN &#x28;&#x27;100&#x27;&#x29; AND TASK_ID &#x3d; 1&#xd;&#xa;</custom_sql>
+      <add_rows_result>N</add_rows_result>
+      <clear_result_rows>Y</clear_result_rows>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>624</xloc>
+      <yloc>48</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Delete file</from>
+      <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>Create file</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Create file</from>
+      <to>Write Start Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Write Start Log</from>
+      <to>Get MIS_DATA</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Write End Log</from>
+      <to>Delete file</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Check All Done</from>
+      <to>Write End Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait for Start</from>
+      <to>Check Start Task</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check Start Task</from>
+      <to>Wait for End</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Check Step Status</from>
+      <to>All Done Setup</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>All Done Setup</from>
+      <to>Check Error</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Wait for End</from>
+      <to>Write Task Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Write Task Log</from>
+      <to>Check Step Status</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Check Error</from>
+      <to>Check All Done</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Write Error Log</from>
+      <to>Delete file</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Check Error</from>
+      <to>Mail Sender</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Create file</from>
+      <to>Write Error File</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Write Error File</from>
+      <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Get MIS_DATA</from>
+      <to>Run Procedure</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Get MIS_DATA</from>
+      <to>Write Error Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Run Procedure</from>
+      <to>Write Error Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check Step Status</from>
+      <to>Write Error Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>All Done Setup</from>
+      <to>Write Error Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Mail Sender</from>
+      <to>Write Error Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Mail Sender</from>
+      <to>Write Error Proc</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Write Error Proc</from>
+      <to>Delete file</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Check All Done</from>
+      <to>Check Done Err</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check Done Err</from>
+      <to>Wait for Start</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check Done Err</from>
+      <to>Write Error Log</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Run Procedure</from>
+      <to>Check Done Err</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+
+</job>
